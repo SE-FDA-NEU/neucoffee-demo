@@ -41,3 +41,8 @@ def test_summarise_groups_by_day():
         {"date": "2026-03-03", "product": "a", "amount": 7.0},
     ]
     assert summarise_by_day(sales) == [("2026-03-02", 15.0), ("2026-03-03", 7.0)]
+
+
+def test_non_numeric_amount_reports_line_number():
+    with pytest.raises(ValueError, match="Dòng 2"):
+        parse_sales_csv(as_stream("date,product,amount\n2026-03-02,tra,nhieu\n"))

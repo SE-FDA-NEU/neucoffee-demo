@@ -33,7 +33,10 @@ def parse_sales_csv(stream):
         try:
             amount = float(row["amount"])
         except (TypeError, ValueError):
-            raise ValueError("Cột amount phải là số.") from None
+            raise ValueError(
+                f"Dòng {line_no}: cột amount phải là số, "
+                f"nhận được {row.get('amount')!r}"
+            ) from None
         rows.append({"date": row["date"], "product": row["product"], "amount": amount})
 
     if not rows:
