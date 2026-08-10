@@ -46,3 +46,5 @@ def test_summarise_groups_by_day():
 def test_non_numeric_amount_reports_line_number():
     with pytest.raises(ValueError, match="Dòng 2"):
         parse_sales_csv(as_stream("date,product,amount\n2026-03-02,tra,nhieu\n"))
+
+# Rà soát: 5 test cho các trường hợp file sai.
