@@ -38,3 +38,7 @@ Scrum, sprint 2 tuần. Board: (link tới GitHub Project của nhóm)
 Sau 3 ngày không trả lời trong chat nhóm: SM nhắn riêng. Sau 5 ngày: nhóm
 báo giảng viên và chia lại việc của người đó trong Sprint Planning kế tiếp.
 Việc đã chia lại thì không tính cho người vắng.
+
+## Ghi chú
+
+Dự án này dùng làm ví dụ cho môn INT2208.
