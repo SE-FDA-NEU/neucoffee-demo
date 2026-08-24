@@ -48,3 +48,12 @@ def test_non_numeric_amount_reports_line_number():
         parse_sales_csv(as_stream("date,product,amount\n2026-03-02,tra,nhieu\n"))
 
 # Rà soát: 5 test cho các trường hợp file sai.
+
+
+def test_to_csv_has_bom_and_header():
+    from revenue import to_csv
+
+    out = to_csv([("2026-03-02", 75000.0)])
+    assert out.startswith("\ufeff")
+    assert "ngay,doanh_thu" in out
+    assert "2026-03-02,75000" in out

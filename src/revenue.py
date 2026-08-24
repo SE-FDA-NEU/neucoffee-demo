@@ -52,3 +52,14 @@ def summarise_by_day(sales):
     return sorted(totals.items())
 
 # Rà soát: đã kiểm tra với file 500 dòng, chạy dưới 1 giây.
+
+
+def to_csv(summary):
+    """Đổi kết quả tổng hợp thành chuỗi CSV để tải về.
+
+    BOM \\ufeff ở đầu để Excel nhận đúng UTF-8, nếu không tiếng Việt sẽ vỡ font.
+    """
+    lines = ["\ufeffngay,doanh_thu"]
+    for day, total in summary:
+        lines.append(f"{day},{total:.0f}")
+    return "\n".join(lines) + "\n"
