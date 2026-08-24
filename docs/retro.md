@@ -11,3 +11,5 @@
 **Hành động:** @huy lập kênh review riêng — kiểm tra lại ở retro Sprint 2.
 
 **Scrum Master Sprint 2:** @thao
+
+
