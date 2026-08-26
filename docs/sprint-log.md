@@ -6,6 +6,13 @@
 
 Chủ quán tải được file CSV doanh thu lên và nhìn thấy tổng doanh thu theo ngày.
 
+### Hai chore issue bắt buộc mỗi sprint
+
+| Issue | Người làm | Đã đóng? |
+|-------|-----------|----------|
+| [Chore] Refine backlog cho Sprint 1 | @linh (PO) | ✓ |
+| [Chore] Sprint 1 wrap-up | @tuan (SM) | ✓ |
+
 ### Đã cam kết
 
 | Issue | Story | Points | Người làm |
